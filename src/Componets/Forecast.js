@@ -153,7 +153,7 @@ function Weather({ city, setCity, icon, setIcon }) {
             <img src={`https://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt='icons' width={70} />
           </div>
 
-          <hr />
+          <hr className='hr-one'/>
 
           <div className='middle-right'>
             <input type='text' name='search' placeholder='Search city..' onKeyDown={(e) => { search(e) }} />
@@ -164,22 +164,22 @@ function Weather({ city, setCity, icon, setIcon }) {
           </div>
 
           <div className='weather-stats'>
-            <div>
+            <div className='humidity'>
               <p>Feels Like</p>
               <p>{Math.round(weather.main?.feels_like)}°F</p>
             </div>
 
-            <div>
+            <div className='humidity'> 
               <p>Humidity</p>
               <p>{weather.main?.humidity}%</p>
             </div>
 
-            <div>
+            <div className='visibility'>
               <p>Visibility</p>
               <p>{weather.visibility}</p>
             </div>
 
-            <div>
+            <div  className='humidity'>
               <p>Wind Speed</p>
               <p>{Math.round(weather.wind?.speed)} Mph</p>
             </div>

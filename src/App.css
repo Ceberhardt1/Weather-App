@@ -104,7 +104,7 @@ hr {
 
 .middle-right {
     text-align: center;
-    
+
 }
 
 .weather-info {
@@ -203,4 +203,79 @@ hr {
     border: none;
     font-size: 15px;
     margin-left: 10px;
+}
+
+
+@media screen and (max-width: 740px) {
+
+    .top-left h1,
+    h3 {
+        font-size: 20px;
+    }
+
+    .bottom-left h1,
+    time {
+        font-size: 20px;
+    }
+
+    .bottom-left p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .inner-child{
+        width: 90%;
+    }
+ 
+}
+
+@media screen and (max-width: 770px) {
+    .humidity{
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .humidity p{
+        margin: auto;
+    }
+    .visibility{
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .visibility p{
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .main-container{
+        height: auto;
+    }
+
+    .inner-child{
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .left-container, .right-container{
+        width: 100%
+    }
+
+    .weather-stats{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 460px){
+.hr-one{
+    width: 10%;
+}
+.weather-info h3{
+    font-size: 15px;
+}
 }
